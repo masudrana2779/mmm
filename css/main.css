@@ -1,0 +1,686 @@
+
+
+/*=================================	
+	font-family 
+==================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700');
+
+
+
+
+/*
+@font-face {
+	font-family:'Segoe_Print';
+	src:url("../fonts/SegoePrint1.eot");
+	src:url("../fonts/SegoePrint1.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/SegoePrint1.woff2") format("woff2"),
+        url("../fonts/SegoePrint1.woff") format("woff"),
+        url("../fonts/SegoePrint1.ttf") format("truetype"),
+        url("../../fonts/SegoePrint1.svg#Segoe_Print") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+*/
+
+
+
+
+@font-face {
+	font-family: 'Segoe Print';
+	src: url('../../fonts/SegoePrint.eot');
+	src: url('../../fonts/SegoePrint.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/SegoePrint.woff2') format('woff2'),
+		url('.././/fonts/SegoePrint.woff') format('woff'),
+		url('../../fonts/SegoePrint.ttf') format('truetype'),
+		url('../../fonts/SegoePrint.svg#SegoePrint') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+ 
+ /*=================================	
+	End of font-family 
+==================================*/
+
+body {
+	
+	/* -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;*/
+}
+
+.block {
+	float:left;
+	width:100%;
+}
+
+/*=================================	
+	End of global-css
+==================================*/
+
+header {
+	background:url(../../iDesign-interiors/images/banner-bg.png) 100% 100%;
+}
+
+.interior-header .main-nav .header-logo {
+	padding-left:32px;
+}
+
+.interior-header .main-nav .interior-menu {
+	padding-right:49px;
+	padding-top:26px;
+}
+
+.interior-header .main-nav .interior-menu li {
+	padding-right:5px;
+}
+
+.interior-header .main-nav .interior-menu li a {
+	font-family:'Lato', sans-serif;
+	font-size:20px;
+	line-height:20px;
+	font-weight:400;
+	color:#fcecdf;
+	text-transform:uppercase;
+}
+
+.interior-header .main-nav .interior-menu li a span {
+	padding-left:31px;
+}
+
+.interior-header .main-nav .interior-menu li:nth-child(5) a span {
+	padding-left:44px;
+}
+
+.interior-header .main-nav .interior-menu li a:focus,
+.interior-header .main-nav .interior-menu li a:hover {
+	background:none;
+	color:#ff9508;
+	outline:none;
+}
+
+.interior-header .main-nav .interior-menu li a:focus span,
+.interior-header .main-nav .interior-menu li a:hover span {
+	color:#fff;
+}
+
+.main-nav {
+	background:rgba(21, 20, 20, 0.76);
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	transition:all 0.3s ease 0s;
+	padding-top:38px;
+	padding-bottom:35px;
+}
+
+.main-nav .header-logo {
+	transition: all 0.3s ease 0s;
+}
+
+.main-nav.sticky-nav {
+	background:rgba(21, 20, 20, 0.9);
+  	position:fixed;
+  	top:0;
+  	left:0;
+  	width:100%;
+  	padding:10px;
+  	z-index:1000;
+  	padding-top:18px;
+  	padding-bottom:25px;
+}
+
+.main-nav.sticky-nav .header-logo {
+ 	max-width:340px;
+	padding-top:10px;
+}
+
+ /*=================================	
+	End of interior-header css 
+==================================*/
+.interior-banner {
+	padding-top:290px;
+	padding-bottom:200px;
+}
+
+.interior-banner .banner-text {
+	max-width:1036px;
+	margin:0 auto;
+}
+
+.banner-text h2 {
+	font-family:'Lato', sans-serif;
+	font-size:60px;
+	line-height:80px;
+	font-weight:700;
+	color:#fdede0;
+	font-style:italic;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	text-shadow:4px 0 6px rgba(0, 0, 0, 0.8);
+	background:rgba(31, 31, 31, 0.4);
+	padding-top:50px;
+	padding-bottom:50px;
+	border-bottom-left-radius:85px;
+    border-top-right-radius:85px;
+}
+
+.interior-banner .banner-text .see-more-btn {
+	font-family:'Lato', sans-serif;
+	font-size:30px;
+	line-height:30px;
+	font-weight:400;
+	color:#fdede0;
+	text-transform:uppercase;
+	background:none;
+	border:2px solid #fdede0;
+	padding:28px 33px 28px 37px;
+	margin-top:127px;
+	border-radius:0;
+	letter-spacing:5px;
+}
+
+.interior-banner .banner-text .see-more-btn:hover {
+	color:#2b1f21;
+	background:#fdede0;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+/*=================================	
+	End of interior-banner css 
+==================================*/
+.why-choose {
+	background:#fdede0;
+	padding-top:50px;
+}
+
+.why-choose .Choose-title h2 {
+	font-family:'Lato', sans-serif;
+	font-size:36px;
+	line-height:36px;
+	font-weight:400;
+	color:#ff9508;
+	text-shadow:2px 0 2px rgba(0, 0, 0, 0.6);
+	background:url(../images/title-underline-bg.png) no-repeat scroll center bottom;
+	padding-bottom:18px;
+}
+
+.why-choose .choose-text p {
+	font-family:'Lato', sans-serif;
+	font-size:18px;
+	line-height:24px;
+	font-weight:400;
+	color:#2b1f21;
+	max-width:865px;
+	margin:0 auto;
+	margin-top:28px;
+	margin-bottom:119px;
+}
+
+.why-choose .choose-item {
+	margin-bottom:105px;
+}
+
+.why-choose .choose-item p {
+	font-family:'Segoe_Print';
+	font-size:32px;
+	line-height:32px;
+	color:#2b1f21;
+}
+
+.why-choose .choose-item i {
+	border: 3px solid #ff9508;
+    color: #2b1f21;
+    float: left;
+    font-size: 32px;
+	line-height: 63px;
+    height: 72px;
+    text-align: center;
+    width: 72px;
+	position:relative;
+	margin-right:30px;
+}
+
+.why-choose .choose-item i::after {
+	border: 3px solid;
+	content:"";
+    height: 72px;
+    width: 72px;
+	position:absolute;
+	left:-11px;
+	top:-11px;
+}
+
+.why-choose .choose-item i span {
+	border: 3px solid;
+    float: left;
+    height: 72px;
+    width: 72px;
+	position:absolute;
+	bottom:-11px;
+	right:-11px;
+	display:block;
+}
+
+/*=================================	
+	End of why-choose css 
+==================================*/
+.our-service {
+	background:#fdede0;
+	padding-top:27px;
+}
+
+.our-service .service-content {
+	padding-left:0;
+	padding-right:0;
+}
+
+.our-service .service-content .service-title h2 {
+	font-family:'Lato', sans-serif;
+	font-size:36px;
+	line-height:36px;
+	font-weight:400;
+	color:#ff9508;
+	text-shadow:2px 0 2px rgba(0, 0, 0, 0.6);
+	background:url(../images/title-underline-bg.png) no-repeat scroll center bottom;
+	padding-bottom:18px;
+	margin-bottom:59px;
+}
+
+.service-content .office-degign,
+.service-content .commercial-degign,
+.service-content .residential-degign {
+	padding-left:0;
+	padding-right:0;
+	padding-top:16px;
+	padding-bottom:66px;
+}
+
+.service-content .office-degign {
+	background:url(../images/office-bg.png);
+}
+
+.service-content .commercial-degign {
+	background:url(../images/commercial-bg.png);
+}
+
+.service-content .residential-degign {
+	background:url(../images/residential.png);
+}
+
+.service-content .office-degign .office-details,
+.service-content .commercial-degign .commercial-details,
+.service-content .residential-degign .residential-details {
+	max-width:556px;
+	margin:0 auto;
+}
+
+.service-content .office-degign .office-details h2,
+.service-content .commercial-degign .commercial-details h2,
+.service-content .residential-degign .residential-details h2 {
+	font-family:'Lato', sans-serif;
+	font-size:26px;
+	line-height:26px;
+	font-weight:400;
+	color:#ff9508;
+	text-transform:uppercase;
+	text-shadow:2px 0 2px rgba(0, 0, 0, 0.6);
+	padding-bottom:23px;
+}
+
+.service-content .office-degign .office-details p,
+.service-content .commercial-degign .commercial-details p {
+	font-family:'Lato', sans-serif;
+	font-size:18px;
+	line-height:21px;
+	font-weight:400;
+	color:#dddddd;
+	margin-bottom:40px;
+}
+
+.service-content .residential-degign .residential-details p {
+	font-family:'Lato', sans-serif;
+	font-size:16px;
+	line-height:19px;
+	font-weight:400;
+	color:#dddddd;
+	margin-bottom:69px;
+}
+
+.service-content .office-degign .office-details .read-more-btn,
+.service-content .commercial-degign .commercial-details .read-more-btn,
+.service-content .residential-degign .residential-details .read-more-btn {
+	font-family:'Lato', sans-serif;
+	font-size:16px;
+	line-height:16px;
+	font-weight:400;
+	color:#fdede0;
+	background:none;
+	border:1px solid #fdede0;
+	border-radius:0;
+	padding:11px 24px 11px 25px;;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+
+.service-content .office-degign .office-details .read-more-btn:hover,
+.service-content .commercial-degign .commercial-details .read-more-btn:hover,
+.service-content .residential-degign .residential-details .read-more-btn:hover {
+	color:#2b1f21;
+	background:#fdede0;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+/*=================================	
+	End of our-service css 
+==================================*/
+.our-process {
+	background:#fdede0;
+}
+
+.our-process .process-content {
+	padding-right:14px;
+}
+
+.our-process .Process-title h2 {
+	font-family:'Lato', sans-serif;
+	font-size:36px;
+	line-height:36px;
+	font-weight:400;
+	color:#ff9508;
+	text-shadow:2px 0 2px rgba(0, 0, 0, 0.6);
+	background:url(../images/our-process-bg.png) no-repeat scroll center bottom;
+	padding-bottom:18px;
+}
+
+.Process-title .process-item p {
+	font-family:'Lato', sans-serif;
+	font-size:24px;
+	line-height:30px;
+	font-weight:400;
+	position:relative;
+	border:1px solid #ff9508;
+	border-radius:50%;
+	width:250px;
+	height:250px;
+	text-align:center;
+}
+
+.Process-title .process-item p::after {
+	content:"";
+	border:1px solid #2b1f21;
+	position:absolute;
+	width:250px;
+	height:250px;
+	border-radius:50%;
+	top:3px;
+	left:3px;
+}
+
+.Process-title .process-item p a {
+	color:#2b1f21;
+	text-decoration:none;
+	border:1px solid #2b1f21;
+	position:absolute;
+	width:250px;
+	height:250px;
+	border-radius:50%;
+	bottom:3px;
+	right:8px;
+}
+
+.Process-title .process-item p a:hover {
+	color:#fdede0;
+}
+
+.our-process p {
+	font-family:'Lato', sans-serif;
+	font-size:18px;
+	line-height:30px;
+	font-weight:400;
+	color:#2b1f21;
+}
+
+/*=================================	
+	End of our-process css 
+==================================*/
+.our-portfolio {
+	background:#fdede0;
+}
+
+.our-portfolio .portfolio-content {
+	padding-left:0;
+	padding-right:0;
+}
+
+.our-portfolio .portfolio-title h2 {
+	font-family:'Lato', sans-serif;
+	font-size:36px;
+	line-height:36px;
+	font-weight:400;
+	color:#ff9508;
+	text-shadow:2px 0 2px rgba(0, 0, 0, 0.6);
+	background:url(../images/title-underline-bg.png) no-repeat scroll center bottom;
+	padding-bottom:18px;
+}
+
+.our-portfolio .portfolio-content .portfolio-design {
+	padding-left:0;
+	padding-right:0;
+}
+
+.portfolio-design .portfolio-image img {
+	position:relative;
+}
+
+.portfolio-design .portfolio-image .overlay-text {
+	position:absolute;
+	float:left;
+	width:100%;
+	height:100%;
+	top:0%;
+	background:rgba(255, 149, 8, 0.6);
+	opacity:0;
+}
+
+.portfolio-design .portfolio-image .overlay-text:hover {
+	opacity:1;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.portfolio-design .portfolio-image .overlay-text p {
+	font-family:'Lato', sans-serif;
+	font-size:36px;
+	line-height:36px;
+	font-weight:400;
+	color:#2b1f21;
+	margin-top:5%;
+	margin-left:5%;
+	border:2px solid #795837;
+	height:430px;
+	width:430px;
+	padding-top:41%;
+}
+
+/*=================================	
+	End of our-portfolio css 
+==================================*/
+.footer-contact {
+	background:#fdf3eb;
+}
+
+.footer-contact .footer-content {
+	float:left;
+	width:100%;
+	padding-left:0;
+	padding-right:0;
+	
+}
+
+.footer-contact .get-in-touch {
+	padding-top:55px;
+}
+
+.footer-contact .get-in-touch .text-wrap {
+	max-width:525px;
+	margin:0 auto;
+}
+
+.footer-contact .get-in-touch .text-wrap h2 {
+	font-family:'Lato', sans-serif;
+	font-size:34px;
+	line-height:34px;
+	font-weight:400;
+	color:#2b1f21;
+	text-transform:uppercase;
+	margin-bottom:22px;
+}
+
+.footer-contact .get-in-touch .text-wrap p {
+	font-family:'Lato', sans-serif;
+	font-size:18px;
+	line-height:24px;
+	font-weight:300;
+	color:#2b1f21;
+	margin-bottom:55px;
+}
+
+.footer-contact .get-in-touch .text-wrap ul {
+	padding-left:0;
+}
+
+.footer-contact .get-in-touch .text-wrap ul li {
+	list-style:none;
+	font-family:'Lato', sans-serif;
+	font-size:18px;
+	line-height:18px;
+	font-weight:300;
+	color:#2b1f21;
+	padding-top:35px;
+}
+
+.footer-contact .get-in-touch .text-wrap ul li:nth-child(1) {
+	padding-top:0;
+}
+
+.footer-contact .get-in-touch .text-wrap ul li a i {
+	font-size:24px;
+	color:#2b1f21;
+	padding-right:22px;
+}
+
+.footer-contact .contact-form {
+	background:url(../images/contact-bg.png);
+	padding-top:40px;
+	padding-bottom:92px;
+}
+
+.footer-contact .contact-form form {
+	max-width:524px;
+	margin:0 auto;
+}
+
+.contact-form .input-area input {
+	width:100%;
+	height:48px;
+	border:none;
+	font-family:'Lato', sans-serif;
+	font-size:16px;
+	line-height:22px;
+	font-weight:400;
+	color:#2b1f21;
+	padding-left:18px;
+}
+
+.contact-form .text-message textarea {
+	float:left;
+	border:none;
+	width:334px;
+	max-width:100%;
+	height:124px;
+	font-family:'Lato', sans-serif;
+	font-size:16px;
+	line-height:22px;
+	font-weight:400;
+	color:#2b1f21;
+	padding-left:18px;
+	padding-top:10px;
+}
+
+.contact-form .text-message .submit-btn {
+	font-family:'Lato', sans-serif;
+	font-size:18px;
+	line-height:33px;
+	font-weight:400;
+	color:#2b1f21;
+	background:#fdede0;
+	border:none;
+	border-radius:0;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	padding:8px 34px 7px 37px;
+	float:right;
+}
+
+.contact-form .text-message .submit-btn:hover {
+	background:#ff9508;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.contact-form .input-area,
+.contact-form .text-message {
+	margin-top:40px;
+}
+
+/*=================================	
+	End of footer-contact css 
+==================================*/
+
+.interior-footer {
+	background:#2b1f21;
+	padding-top:40px;
+} 
+
+.interior-footer .social-icon a i {
+	font-size:36px;
+	color:#a8a19e;
+	padding-left:27px;
+	padding-right:27px;
+}
+
+.interior-footer .social-icon a i:hover {
+	color:#fdede0;
+}
+
+.interior-footer .footer-text {
+	font-family:'Lato', sans-serif;
+	font-size:16px;
+	line-height:16px;
+	font-weight:300;
+	color:#ff9508;
+	text-transform:uppercase;
+	margin-top:34px;
+}
+
+/*=================================	
+	End of interior-footer css 
+==================================*/

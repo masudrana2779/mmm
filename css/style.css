@@ -1,0 +1,1259 @@
+/* Global CSS   */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+figure {
+    margin: 0;
+}
+
+.row {
+    max-width: 1170px;
+}
+
+body a {
+    text-decoration: none !important;
+}
+
+
+/* Custom CSS  */
+
+header {
+    background-image: url("../img/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    padding-top: 250px;
+}
+
+.headerTop {
+    background: rgba(0, 0, 0, 0.76);
+    padding-bottom: 28px;
+    padding-top: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    z-index: 100;
+}
+
+.headerTop.scrollFixed {
+    background: rgba(30, 25, 26, 0.98);
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.headerTop img {
+    width: 90%;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.scrollFixed img {
+    padding-top: 8px;
+    width: 80%;
+}
+
+.mainMenu {
+    margin-top: 2.44rem;
+    margin-bottom: .7rem;
+}
+
+.mainMenu ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.mainMenu .menu li {
+    display: inline-flex;
+}
+
+.mainMenu .menu li .rightBorder {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -7px;
+}
+
+.mainMenu ul li a {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 0 0 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    position: relative;
+}
+
+.mainMenu ul li a:before {
+    background: #ff9508 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: 50%;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 0;
+}
+
+.mainMenu ul li.active a:before,
+.mainMenu ul li a:hover:before {
+    right: 0;
+    width: 100%;
+}
+
+.mainMenu ul li.active a,
+.mainMenu ul li a:focus,
+.mainMenu ul li a:hover {
+    color: #ff9508;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0);
+}
+
+.mobileMenu i {
+    color: #ff9508;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.navbar {
+    border: medium none;
+    margin-bottom: 0;
+    min-height: 0;
+    position: relative;
+}
+
+.mainMenu .nav.navbar-nav {
+    display: inline-block;
+    text-align: center;
+}
+
+.mainMenu .nav.navbar-nav li a {
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.mainMenu .navbar-collapse .navbar-nav {
+    display: block;
+    width: 100%;
+}
+
+.mainMenu .navbar-collapse .navbar-nav a {
+    display: inline-block;
+}
+
+.mainMenu .mobileMenu .navbar-collapse {
+    margin-top: 10px;
+}
+
+
+/*    mobileNav   */
+
+.mobileMenu {
+    display: none;
+}
+
+.mobileView {
+    cursor: pointer;
+    height: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 28px;
+    margin-right: 20px;
+}
+
+.bar,
+.bar2.on,
+.bar3 {
+    background: #ff9508 none repeat scroll 0 0;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    width: 100%;
+}
+
+.bar {
+    top: 20%;
+}
+
+.bar2.on {
+    top: 50%;
+    opacity: 1;
+}
+
+.bar3 {
+    top: 80%;
+}
+
+.mobileView.dag .bar {
+    top: 50%;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 100%;
+}
+
+.mobileView.dag .bar2.on {
+    opacity: 0;
+}
+
+.mobileView.dag .bar3 {
+    top: 50%;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 100%;
+}
+
+.top a {
+  background: #ff9508;
+  border-radius: 5px;
+  bottom: 25px;
+  color: #ffffff;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: bold;
+  height: 30px;
+  line-height: 25px;
+  opacity: 1;
+  position: fixed;
+  right: 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 1s ease 0s;
+  width: 30px;
+  z-index: 1000;
+}
+
+.NameLoader {
+    position: relative;
+}
+
+.NameLoader .type-wrap {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #323232;
+    text-transform: capitalize;
+}
+
+.type-wrap > span#typed {
+    color: #ff9508;
+}
+
+.type-wrap > span#typed #hi {
+    color: #fff;
+    font-size: 90px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.header {
+    position: relative;
+}
+
+.header .sayHi {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.header .hi {
+    color: #ffffff;
+    font-family: "Raleway";
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #323232;
+    text-transform: uppercase;
+}
+
+.header .hi #hi {
+    color: #ffffff;
+    font-size: 90px;
+    text-transform: capitalize;
+}
+
+.header .job {
+    color: #eeeeee;
+    font-family: "Raleway";
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.header .down {
+    bottom: 50px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.header .down i {
+    animation: 1.5s linear 0s normal none infinite running down;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+    top: 0;
+}
+
+
+/* ##########################
+
+    End of header Top CSS 
+
+########################### */
+
+.headerBottom {
+    padding: 130px 0 20px;
+}
+
+.heading {
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 auto 137px;
+    text-align: center;
+    width: 790px;
+    position: relative;
+    padding: 50px 0 42px;
+}
+
+.heading:before {
+    border-bottom: 175px solid rgba(0, 0, 0, 0.4);
+    border-left: 85px solid rgba(0, 0, 0, 0.4);
+    border-top: 85px solid rgba(0, 0, 0, 0);
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -85px;
+    top: 0;
+    width: 0;
+}
+
+.heading:after {
+    border-bottom: 85px solid rgba(0, 0, 0, 0);
+    border-right: 85px solid rgba(0, 0, 0, 0.4);
+    border-top: 175px solid rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    content: "";
+    left: -85px;
+    position: absolute;
+}
+
+.heading h1 {
+    color: #fdede0;
+    font-family: lato;
+    font-size: 60px;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 80px;
+    text-shadow: 2px 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.item a.seeMore {
+    border: 2px solid #fdede0;
+    color: #fdede0;
+    display: block;
+    font-family: lato;
+    font-size: 30px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 auto 166px;
+    text-transform: uppercase;
+    width: 260px;
+    text-align: center;
+    text-shadow: 2px 0 2px rgba(0, 0, 0, 0.6);
+    letter-spacing: 5px;
+    -moz-transition: .8s;
+    -webkit-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+}
+
+.item a.seeMore:hover {
+    color: #000;
+}
+
+.hoverTransition {
+    background-image: linear-gradient(45deg, #fdede0 50%, rgba(0, 0, 0, 0) 50%);
+    background-position: -100px 0;
+    background-repeat: no-repeat;
+    background-size: 100px 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hoverTransition:hover {
+    background-position: 0 0;
+    background-size: 500% 300%;
+}
+
+
+/*  slider CSS  */
+
+.headerBottom .slick-prev,
+.headerBottom .slick-next {
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 0px;
+    height: 144px;
+    width: 74px;
+    text-align: center;
+    z-index: 2;
+}
+
+.headerBottom .slick-prev {
+    left: 0px;
+}
+
+.headerBottom .slick-next {
+    right: 0px;
+}
+
+.headerBottom .slick-prev:before {
+    content: "\f104";
+    font-family: fontawesome;
+    font-size: 66px;
+    line-height: 138px;
+}
+
+.headerBottom .slick-next:before {
+    content: "\f105";
+    font-family: fontawesome;
+    font-size: 66px;
+    line-height: 138px;
+}
+
+.headerBottom .slick-prev:hover,
+.headerBottom .slick-prev:focus,
+.headerBottom .slick-next:hover,
+.headerBottom .slick-next:focus {
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0);
+    outline: medium none;
+}
+
+.headerBottom .slick-dots li,
+.headerBottom .slick-dots li button {
+    padding: 0;
+    height: 5px;
+}
+
+.headerBottom .slick-dots li button:before {
+    background: #fdede0;
+    content: "";
+    height: 5px;
+    opacity: 1;
+    z-index: 9;
+}
+
+.headerBottom .slick-dots li.slick-active button:before {
+    opacity: 1;
+    background: #1f1f1f;
+}
+
+
+/* ##########################
+
+    End of header Bottom CSS 
+
+########################### */
+
+.whyChoose {
+    text-align: center;
+    background: #fdede0;
+}
+
+.chooseHeading {
+    margin: 75px auto 123px;
+}
+
+.chooseHeading h1,
+.ourServicesHeading h1,
+.processHeading h1 {
+    color: #ff9508;
+    font-size: 36px;
+    line-height: 28px;
+    margin: 0 auto 5px;
+    font-family: lato;
+    text-shadow: 2px 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.whyChoose .chooseHeading p {
+    font-family: lato;
+    font-size: 18px;
+    margin: 17PX auto 0;
+    max-width: 860px;
+    color: #2b1f21;
+}
+
+.chooseItem {
+    margin-bottom: 107px;
+}
+
+.chooseItem span.checkBorder {
+    display: block;
+    height: 72px;
+    position: relative;
+    text-align: center;
+    width: 72px;
+    float: left;
+    margin-right: 20px;
+}
+
+.chooseItem span.checkBorder:before {
+    left: -8px;
+    top: -8px;
+    z-index: 1;
+}
+
+.chooseItem span.checkBorder:before,
+.chooseItem span.checkBorder:after {
+    position: absolute;
+    content: "";
+    border: 3px solid #2b1f21;
+    display: block;
+    height: 72px;
+    width: 72px;
+}
+
+.chooseItem span.checkBorder:after {
+    bottom: -8px;
+    left: 8px;
+    z-index: 3;
+}
+
+.chooseItem span.checkBorder i {
+    color: #2b1f21;
+    font-size: 34px;
+    border: 3px solid #ff9508;
+    display: block;
+    height: 72px;
+    line-height: 62px;
+    position: relative;
+    width: 72px;
+    z-index: 2;
+}
+
+.chooseItem p {
+    color: #2b1f21;
+    font-family: "Segoe Print";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: left;
+    float: left;
+}
+
+.ourServicesHeading,
+.processHeading {
+    background: #fdede0 none repeat scroll 0 0;
+    padding: 50px;
+    text-align: center;
+}
+
+.separate img {
+    display: initial;
+}
+
+
+/* ##########################
+
+    End of whyChoose CSS 
+
+########################### */
+
+.designItem {
+    padding: 30px 15px 66px 40px;
+}
+
+.designItem h3 {
+    color: #ff9508;
+    font-family: lato;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    text-shadow: 2px 0 2px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    height: 70px;
+}
+
+.designItem p {
+    color: #dddddd;
+    font-family: lato;
+    font-size: 18px;
+    margin-bottom: 36px;
+}
+
+.designItem a.readMore {
+    border: 2px solid #fdede0;
+    color: #fdede0;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 160px;
+    letter-spacing: 2px;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.designItem a.readMore:hover {
+    color: #2b1f21;
+}
+
+
+/* ##########################
+
+    End of ourDesign CSS 
+
+########################### */
+
+.ourProcess {
+    text-align: center;
+    background: #fdede0;
+}
+
+.ourProcess .processPara p {
+    border-top: 2px solid #2b1f21;
+    font-family: lato;
+    font-size: 18px;
+    margin: 0 auto 118px;
+    padding-top: 20px;
+    max-width: 1140px;
+}
+
+.processLink {
+    margin-bottom: 112px;
+    margin-top: 147px;
+    position: relative;
+}
+
+.processLink p a {
+    border: 1px solid #feab3e;
+    border-radius: 100%;
+    color: #2b1f21;
+    display: block;
+    font-family: lato;
+    font-size: 24px;
+    height: 250px;
+    line-height: 250px;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    transition: .9s;
+}
+
+.processLink p a:after {
+    border: 1px solid #000000;
+    border-radius: 100%;
+    content: "";
+    height: 100%;
+    left: -5px;
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    opacity: 1;
+}
+
+.processLink p a:before {
+    border: 1px solid #000000;
+    border-radius: 100%;
+    content: "";
+    height: 100%;
+    right: -5px;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    opacity: 1;
+}
+
+.processLink p a:hover {
+    background: #2b1f21;
+    color: #fff;
+    border: 1px solid #2b1f21;
+}
+
+.processLink p a:hover:after {
+    opacity: 0;
+}
+
+.processLink p a:hover:before {
+    opacity: 0;
+}
+
+.processLink img.arrow1,
+.processLink img.arrow3 {
+    bottom: -35px;
+    left: 60px;
+    position: absolute;
+}
+
+.processLink img.arrow2 {
+    position: absolute;
+    right: -205px;
+    top: -55px;
+}
+
+.shape-5 {
+    position: absolute;
+    left: 50%;
+    top: 94%;
+}
+
+
+/* ##########################
+
+        End of ourProcess CSS 
+
+########################### */
+
+.portfolioItem {
+    padding: 0;
+    position: relative;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.portfolioItem img {
+    width: 100%;
+}
+
+.portfolioItem h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    font-size: 30px;
+    color: #2b1f21;
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    font-family: "lato";
+    z-index: 2;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.portfolioItem:before {
+    border: 3px solid #000000;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    width: 100%;
+    z-index: 1;
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.portfolioItem:after {
+    background: #ff9508;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.portfolioItem:hover h2,
+.portfolioItem:hover:after {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.portfolioItem:hover:before {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.portfolioItem:hover {
+    cursor: pointer;
+}
+
+
+/* ##########################
+
+    End of portfolio CSS 
+
+ ##########################  */
+
+.portfolioItem1 {
+    padding: 0;
+    position: relative;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.portfolioItem1 img {
+    width: 100%;
+}
+
+.textContent {
+    background: rgba(255, 150, 10, .6);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -moz-transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    width: 100%;
+}
+
+.textContent .hoverText h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    font-size: 30px;
+    color: #2b1f21;
+    font-family: "lato";
+    z-index: 2;
+    -moz-transition: .9s;
+    -webkit-transition: .9s;
+    -o-transition: .9s;
+    transition: .9s;
+}
+
+.hoverText {
+    border: 2px solid #000000;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    width: 100%;
+}
+
+.portfolioItem1:hover .textContent {
+    display: block;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.portfolioItem1:hover {
+    cursor: pointer;
+}
+
+
+/* ##########################
+
+    End of portfolio CSS 
+
+########################### */
+
+.contact {
+    background: #fdf3eb;
+    height: 563px;
+}
+
+.contact .contactLeft {
+    padding-top: 68px;
+    padding-bottom: 138px;
+    margin: 0 auto;
+    max-width: 510px;
+}
+
+.contact .contactLeft h3 {
+    color: #2b1f21;
+    font-family: "lato";
+    font-size: 34px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.contact .contactLeft p {
+    color: #2b1f21;
+    font-family: "lato";
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    margin-bottom: 56px;
+    clear: both;
+}
+
+.contact .contactLeft p a {
+    color: #2b1f21;
+}
+
+.contact .contactLeft p i {
+    font-size: 24px;
+    margin-right: 20px;
+    max-width: 23px;
+    float: left;
+}
+
+.contact .contactLeft p span {
+    float: left;
+    line-height: 22px;
+    margin-bottom: 33px;
+    max-width: 350px;
+}
+
+.contact .contactRight {
+    margin: 0 auto;
+    padding-top: 80px;
+    max-width: 525px;
+    height: 563px;
+}
+
+.contact .contactRight label {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.contact .contactRight input[type="text"]:focus,
+input[type="email"]:focus,
+.contact .contactRight textarea:focus {
+    background: #fefefe;
+}
+
+.contact .contactRight input[type="text"],
+input[type="email"] {
+    background: rgba(225, 220, 215, 0.80) none repeat scroll 0 0;
+    color: #2b1f21;
+    height: 50px;
+    width: 100%;
+    border: none;
+}
+
+.contact .contactRight textarea {
+    height: 125px;
+    max-width: 335px;
+    float: left;
+    border: none;
+    background: rgba(225, 220, 215, 0.80) none repeat scroll 0 0;
+}
+
+input[type="button"] {
+    background-image: linear-gradient(45deg, #ff9508 50%, rgba(0, 0, 0, 0) 50%);
+    background-position: -50px 0;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-color: #fdede0;
+    border: medium none;
+    color: #2b1f21;
+    float: right;
+    font-family: "lato";
+    font-size: 18px;
+    height: 50px;
+    text-transform: uppercase;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 150px;
+}
+
+input[type="button"]:hover {
+    background-position: 0 0;
+    background-size: 300% 300%;
+    cursor: pointer;
+}
+
+.contact .contactRight input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #2b1f21;
+}
+
+.contact .contactRight input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #2b1f21;
+}
+
+.contact .contactRight input[type="text"]:focus,
+input[type="email"]:focus {
+    background: #fefefe;
+    border: none;
+}
+
+
+/* ##########################
+
+    End of contact CSS 
+
+########################### */
+
+footer {
+    background: #2b1f21;
+    padding-top: 20px;
+}
+
+.sociaBar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.sociaBar ul li {
+    display: inline-block;
+}
+
+.sociaBar ul li a {
+    color: #a8a19e;
+    display: block;
+    font-size: 36px;
+    padding: 20px 22.5px 29px;
+}
+
+.sociaBar ul li a:hover {
+    color: #fdede0;
+}
+
+.copy {
+    text-align: center;
+}
+
+.copy p {
+    color: #ff9508;
+    font-size: 16px;
+    font-family: "lato";
+    margin-bottom: 33px;
+}
+
+
+/* ##########################
+
+    End of Footer CSS 
+
+########################### */
+
+.carousel {
+    padding: 175px 0 153px;
+    /*    background-image: url("../img/curosel_bg.jpg");*/
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.arrow-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.caroudelBody {
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 70px 0 94px;
+    text-align: center;
+}
+
+.caroudelBody p {
+    margin: 0 auto;
+    max-width: 980px;
+    color: #fdede0;
+}
+
+.carousel p.Img {
+    width: 157px;
+    margin: 0 auto 35px;
+    height: 157px;
+    line-height: 157px;
+    border: 1px solid #ff9508;
+    position: relative;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.carousel p.Img:after {
+    position: absolute;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 100%;
+    content: "";
+}
+
+.carousel p.Img:before {
+    position: absolute;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+    left: -3px;
+    top: -3px;
+    border-radius: 100%;
+    content: "";
+}
+
+.carousel .slick-slide img {
+    display: inline;
+}
+
+.carousel p.nam {
+    color: #ff9508;
+}
+
+.nam > span {
+    position: relative;
+}
+
+.nam > span:after {
+    background: #ff9508;
+    content: "";
+    height: 2px;
+    left: -20px;
+    position: absolute;
+    top: 50%;
+    width: 15px;
+}
+
+.carousel .slick-dots li button:before {
+    background: #ff9508;
+    content: "";
+    height: 5px;
+}
+
+.carousel .slick-prev,
+.carousel .slick-next {
+    color: rgba(0, 0, 0, 0);
+    height: 50px;
+    top: 50%;
+    width: 50px;
+    z-index: 999;
+    background: rgba(255, 255, 255, .3);
+    opacity: .1;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.carousel .slick-dots li,
+.carousel .slick-dots li button {
+    padding: 0;
+    height: 5px;
+}
+
+.carousel .slick-arrow:hover {
+    opacity: 1;
+}
+
+.carousel .slick-next {
+    right: 0;
+}
+
+.carousel .slick-prev {
+    left: 0;
+}
+
+.carousel .slick-prev:before {
+    content: "\f053";
+    font-family: fontawesome;
+}
+
+.carousel .slick-next:before {
+    content: "\f054";
+    font-family: fontawesome;
+}
